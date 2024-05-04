@@ -27,12 +27,12 @@
         <section class="flex justify-center fade-in">
             <Avatar class="border-2 border-purple-400 rounded-full" src="https://avatars.githubusercontent.com/u/56565042?v=4" />
         </section>
-        <LightSwitch class="{!projectActive ? 'absolute top-5 left-5 light-switch opacity-100' : 'hidden'}" />
+        <!--<LightSwitch class="{!projectActive ? 'absolute top-5 left-5 light-switch opacity-100' : 'hidden'}" />-->
         <header class="card-header flex justify-center text-xl font-bold fade-in">Hello I'm Yuki</header>
         <section class="p-4 flex justify-center fade-in">Developer • 18 • he/him</section>
         <section class="flex justify-center button">
-            <a class="btn variant-filled-primary" target="_blank" href="mailto:contact@yuki6942.xyz">Contact</a>
-            <a class="btn variant-filled-secondary" target="_blank" href="https://discord.com/users/594627968668794896">Discord</a>
+            <a class="btn variant-filled-primary mr-4" target="_blank" href="mailto:contact@yuki6942.xyz">Contact</a>
+            <a class="btn variant-filled-secondary mr-4" target="_blank" href="https://discord.com/users/594627968668794896">Discord</a>
             <a class="btn variant-filled-tertiary" target="_blank" href="https://github.com/yuki6942/">GitHub</a>
         </section>
         <section class="flex justify-center button pt-3">
@@ -41,7 +41,7 @@
         {/if}
         <div id="projects" class="project-content opacity-0 project-fade" style="margin-top: 70px;">
             {#if projectActive}
-            <LightSwitch class="absolute top-5 left-5 light-switch opacity-100" />
+           <!-- <LightSwitch class="absolute top-5 left-5 light-switch opacity-100" />-->
             <button class="btn up-arrow absolute top-5 right-5" on:click={handleClickUp}>
                 <i class="fas fa-arrow-up"></i> 
             </button>
