@@ -5,17 +5,17 @@ export function scrollUp() {
     const card = document.querySelector('.card');
 
     gsap.to(card, {
-        width: '800px', // Set the width to 800px
-        height: '800px', // Set the height to 800px
-        duration: 0.5, // Animation duration
-        ease: 'power2.out' // Easing function
+        width: '800px', 
+        height: '800px', 
+        duration: 0.5,
+        ease: 'power2.out' 
     });
 
     gsap.to(elementsToMove, {
-        y: -50, // Move elements up by 50 pixels
-        opacity: 0, // Set opacity to 0
-        duration: 0.5, // Animation duration
-        ease: 'power2.out', // Easing function
+        y: -50, 
+        opacity: 0, 
+        duration: 0.5,
+        ease: 'power2.out', 
     });
 
     setTimeout(() => {
@@ -36,17 +36,17 @@ export function scrollDown() {
     const card = document.querySelector('.card');
 
     gsap.to(card, {
-        width: '350px', // Set the width back to 350px
-        height: '300px', // Set the height back to 300px
-        duration: 0.5, // Animation duration
-        ease: 'power2.out' // Easing function
+        width: '350px',
+        height: '300px',
+        duration: 0.5, 
+        ease: 'power2.out' 
     });
 
     gsap.to(elementsToMove, {
-        y: 0, // Move elements back to their original position
-        opacity: 1, // Set opacity back to 1
-        duration: 0.5, // Animation duration
-        ease: 'power2.out', // Easing function
+        y: 0, 
+        opacity: 1, 
+        duration: 0.5, 
+        ease: 'power2.out', 
     });
 
     const projectContent = document.getElementById('projects');
