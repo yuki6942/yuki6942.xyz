@@ -1,6 +1,8 @@
 import gsap from "gsap";
 
-export function scrollUp() {
+// TODO: Add About section animations
+
+export function projectsScrollUp() {
     const elementsToMove = document.querySelectorAll('.fade-in, .button');
     const card = document.querySelector('.card');
 
@@ -31,7 +33,7 @@ export function scrollUp() {
 
 }
 
-export function scrollDown() {
+export function projectsScrollDown() {
     const elementsToMove = document.querySelectorAll('.fade-in, .button');
     const card = document.querySelector('.card');
 
