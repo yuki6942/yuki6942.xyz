@@ -21,7 +21,7 @@
     playStartupAnimation();
 </script>
 
-
+<!-- TODO: Split up this file into multiple ones -->
 
 
 <div id="main" class="container mx-auto p-8 space-y-8 flex justify-center items-center h-screen opacity-0">
