@@ -23,8 +23,6 @@
 	playStartupAnimation();
 </script>
 
-<!-- TODO: Split up this file into multiple ones -->
-
 <div
 	id="main"
 	class="container mx-auto p-8 space-y-8 flex justify-center items-center h-screen opacity-0"
@@ -37,59 +35,64 @@
 					src="https://avatars.githubusercontent.com/u/56565042?v=4"
 				/>
 			</section>
-			<!--<LightSwitch class="{!projectActive ? 'absolute top-5 left-5 light-switch opacity-100' : 'hidden'}" />-->
 			<header class="card-header flex justify-center text-xl font-bold fade-in">
 				Hello I'm Yuki
 			</header>
 			<section class="p-4 flex justify-center fade-in">Developer • {currentAge} • he/him</section>
-			<section class="flex justify-center button">
-				<div class="flex justify-center gap-4">
-					<div class="relative group flex flex-col items-center text-center pb-4">
-						<a
-							class="hover:text-orange-600 transition-colors duration-500"
-							target="_blank"
-							href="mailto:contact@yuki6942.xyz"
-						>
-							<i
-								class="transition-transform duration-500 far fa-envelope text-4xl transform hover:scale-125 cursor-pointer"
-							></i>
-						</a>
-					</div>
-					<div class="relative group flex flex-col items-center text-center">
-						<a
-							class="hover:text-black transition-colors duration-500"
-							target="_blank"
-							href="https://github.com/yuki6942/"
-						>
-							<i
-								class="fab fa-github text-4xl transform transition-transform hover:scale-125 cursor-pointer"
-							></i>
-						</a>
-					</div>
-					<div class="relative group flex flex-col items-center text-center">
-						<a
-							class="hover:text-blue-600 transition-colors duration-500"
-							target="_blank"
-							href="https://twitter.com/yuki6942/"
-						>
-							<i
-								class="fab fa-twitter text-4xl transform transition-transform hover:scale-125 cursor-pointer"
-							></i>
-						</a>
-					</div>
+			<section class="flex justify-center items-center socialLinks my-4">
+				<div class="relative group flex flex-col items-center text-center">
+					<a
+						id="mail"
+						class="transition-all duration-300 ease-in-out hover:bg-mail hover:w-11 hover:h-11 hover:mx-4 rounded-full shadow-lg flex justify-center items-center w-10 h-10 bg-gray-800"
+						target="_blank"
+						href="mailto:contact@yuki6942.xyz"
+					>
+						<i
+							class="transition-transform duration-300 fill-current text-white text-lg far fa-envelope"
+						></i>
+					</a>
+				</div>
+				<div class="relative group flex flex-col items-center text-center">
+					<a
+						id="discord"
+						class="transition-all duration-300 ease-out transform flex justify-center items-center w-10 h-10 bg-gray-800 rounded-full shadow-lg hover:w-11 hover:h-11 hover:mx-4 ho hover:bg-discord"
+						target="_blank"
+						href="https://discord.com/users/594627968668794896"
+					>
+						<i
+							class="transition-transform duration-300 fill-current text-white text-lg fab fa-discord"
+						></i>
+					</a>
+				</div>
+
+				<div class="relative group flex flex-col items-center text-center">
+					<a
+						id="github"
+						class="transition-all duration-300 ease-out transform flex justify-center items-center w-10 h-10 bg-gray-800 rounded-full shadow-lg hover:w-11 hover:h-11 hover:mx-4 hover:bg-github"
+						target="_blank"
+						href="https://github.com/yuki6942/"
+					>
+						<i
+							class="transition-transform duration-300 fill-current text-white text-lg fab fa-github"
+						></i>
+					</a>
+				</div>
+
+				<div class="relative group flex flex-col items-center text-center">
+					<a
+						id="twitter"
+						class="transition-all duration-300 ease-out transform flex justify-center items-center w-10 h-10 bg-gray-800 rounded-full shadow-lg hover:w-11 hover:h-11 hover:mx-4 ho hover:bg-twitter"
+						target="_blank"
+						href="https://twitter.com/yuki6942/"
+					>
+						<i
+							class="transition-transform duration-300 fill-current text-white text-lg fab fa-twitter"
+						></i>
+					</a>
 				</div>
 			</section>
-			<section class="flex justify-center button pt-3">
-				<!-- svelte-ignore a11y-interactive-supports-focus -->
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<!-- svelte-ignore a11y-missing-attribute -->
-				<!--TODO: Add about section-->
-				<!--<a class="btn variant-filled-surface cursor-pointer transform transition-transform hover:scale-105 mr-1" on:click={handleProjectsUp}>About</a>-->
-				<!-- svelte-ignore a11y-interactive-supports-focus -->
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<!-- svelte-ignore a11y-missing-attribute -->
+
+			<section class="flex justify-center items-center socialLinks my-4">
 				<a
 					class="btn variant-filled-surface cursor-pointer transform transition-transform hover:scale-105"
 					on:click={handleProjectsUp}>Projects</a
