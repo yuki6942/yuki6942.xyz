@@ -93,9 +93,9 @@
 			</section>
 
 			<section class="flex justify-center items-center socialLinks my-4 fade-in">
-				<a
+				<button
 					class="btn variant-filled-surface cursor-pointer transform transition-transform hover:scale-105"
-					on:click={handleProjectsUp}>Projects</a
+					on:click={handleProjectsUp}>Projects</button
 				>
 			</section>
 		{/if}
