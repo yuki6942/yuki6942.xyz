@@ -39,7 +39,7 @@
 				Hello I'm Yuki
 			</header>
 			<section class="p-4 flex justify-center fade-in">Developer • {currentAge} • he/him</section>
-			<section class="flex justify-center items-center socialLinks my-4">
+			<section class="flex justify-center items-center socialLinks my-4 fade-in">
 				<div class="relative group flex flex-col items-center text-center">
 					<a
 						id="mail"
@@ -92,7 +92,7 @@
 				</div>
 			</section>
 
-			<section class="flex justify-center items-center socialLinks my-4">
+			<section class="flex justify-center items-center socialLinks my-4 fade-in">
 				<a
 					class="btn variant-filled-surface cursor-pointer transform transition-transform hover:scale-105"
 					on:click={handleProjectsUp}>Projects</a
